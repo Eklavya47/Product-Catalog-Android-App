@@ -23,7 +23,7 @@ data class Product(
     @SerializedName("stock")
     val stock: Int?,
     @SerializedName("tags")
-    val tags: List<Tags>?,
+    val tags: List<String>?,
     @SerializedName("brand")
     val brand: String?,
     @SerializedName("sku")
@@ -50,12 +50,6 @@ data class Product(
     val images: List<String>?,
     @SerializedName("thumbnail")
     val thumbnail: String?
-): Parcelable
-
-@Parcelize
-data class Tags(
-    @SerializedName("tag")
-    val tagName: String
 ): Parcelable
 
 @Parcelize

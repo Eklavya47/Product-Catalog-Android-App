@@ -32,7 +32,7 @@ class ProductDetailsActivity: AppCompatActivity() {
         binding.brandNameTextView.text = product?.brand
         binding.ratingTextView.text = product?.rating.toString()
         binding.productTitleTextView.text = product?.title
-        Glide.with(context).load(product?.images?.get(0)).into(binding.productImage)
+        Glide.with(context).load(product?.images?.get(0)).thumbnail(Glide.with(context).load(product?.thumbnail)).into(binding.productImage)
 
         binding.productDescTextView.apply {
             text = product?.description
@@ -51,10 +51,10 @@ class ProductDetailsActivity: AppCompatActivity() {
 
         binding.stockTextView.text = "${product?.stock} left in Stock"
         binding.minOrderQuantityTextView.text = "Minimum Order Quantity: ${product?.minimumOrderQuantity}"
-        binding.discountPercentageTextView.text = "-${product?.discountPercentage}"
+        binding.discountPercentageTextView.text = "-${product?.discountPercentage}%"
         binding.priceTextView.text = "$${product?.price}"
         binding.tag1TextView.text = "${product?.tags?.get(0)}"
-        binding.tag1TextView.text = "${product?.tags?.get(1)}"
+        binding.tag2TextView.text = "${product?.tags?.get(1)}"
 
         initRecyclerView(product!!)
         displayReviews(product.reviews)
