@@ -32,7 +32,7 @@ class ProductDetailsActivity: AppCompatActivity() {
         binding.brandNameTextView.text = product?.brand
         binding.ratingTextView.text = product?.rating.toString()
         binding.productTitleTextView.text = product?.title
-        Glide.with(context).load(product?.thumbnail).into(binding.productImage)
+        Glide.with(context).load(product?.images?.get(0)).into(binding.productImage)
 
         binding.productDescTextView.apply {
             text = product?.description
