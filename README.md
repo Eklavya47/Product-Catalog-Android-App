@@ -1,15 +1,19 @@
 # 🛍️ Product Catalog Android App
-A modern Android application built with Kotlin that showcases products in an elegant UI. The app fetches product data from an API and displays it in a clean, user-friendly interface. Built using MVVM architecture and modern Android development practices.
+A modern and responsive Android app built using Kotlin and XML. This application fetches a list of products from a remote API using Retrofit, and displays them on the home screen via a RecyclerView. Tapping on a product navigates to a detailed screen showing comprehensive information including the product name, description, tags, reviews, price, and more. The app is built using MVVM architecture and leverages Dagger Hilt for dependency injection.
 
 # ✨ Features
-- 📱 **Product Listing** – Clean grid/list view of products using RecyclerView
-- 🔍 **Product Details** – Detailed view showing product information
-- 💰 **Price Information** – Clear display of product pricing
-- ⭐ **Reviews** – Product reviews and ratings
-- 🏷️ **Product Tags** – Categorization using product tags
-- 🎯 **Clean Architecture** – Built with MVVM pattern
+- 📦 **Product Listing** – Clean grid/list view of products using RecyclerView
+- 🔍 **Product Details Page** – View full details like name, description, price, reviews, etc.
+- 🔁 **API Integration** – Powered by Retrofit for efficient network operations.
+- 🧱 **MVVM Architecture** – Clean separation of concerns using the MVVM pattern.
 - 🔄 **Real-time Data** – Fetches latest product data from API
+- 💉 **Dagger Hilt** – For dependency injection across the app components.
 - 🎨 **Material Design** – Modern and intuitive UI
+
+# 📸 Screenshots
+![home page](https://github.com/user-attachments/assets/d458e13c-9129-497b-bf59-c16f01cb4082)
+![details page](https://github.com/user-attachments/assets/d9e9bfad-1173-4034-8ea6-66a37fb86b7e)
+![details page 2](https://github.com/user-attachments/assets/90685586-7188-4594-8e13-a1f845c8d824)
 
 # ⚙️ Tech Stack
 - **Language**: Kotlin
@@ -26,7 +30,6 @@ A modern Android application built with Kotlin that showcases products in an ele
 - **di/**: Dagger Hilt dependency injection modules
 - **domain/**: Business logic, use cases and domain models
 - **ui/**: Activities, Fragments, ViewModels and adapters
-- **ChatwiseApplication.kt**: Application class for Hilt initialization
 - **Constants.kt**: Application-wide constant values
 
 # 🚀 Getting Started
@@ -42,7 +45,4 @@ A modern Android application built with Kotlin that showcases products in an ele
 - Gradle Version: 8.0+
 
 # 🤝 Contributing
-Contributions are welcome! Feel free to submit issues and pull requests.
-
-# 📸 Screenshots
-[Add screenshots of your product listing and detail pages here]
+Contributions are welcome! If you'd like to fix a bug or add a feature, feel free to fork the repository and submit a pull request. Make sure your code adheres to the existing architecture and coding standards.
